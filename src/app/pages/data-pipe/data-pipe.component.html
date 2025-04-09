@@ -1,1 +1,9 @@
-<main>Hello Data pipe</main>
+<main>
+  <h1>Data Pipeline</h1>
+  <h3>{{ today | date : "dd/MM/YYYY" }}</h3>
+  <h3>Your balance is {{ balance | currency : "GBP" }}</h3>
+  <h3>Transactions:</h3>
+  <div>
+    <p>{{ transactions | json }}</p>
+  </div>
+</main>
